@@ -1,7 +1,7 @@
 use std::env;
 use std::fs::{File};
 use std::io::{self, BufRead, BufReader};
-use std::os::unix::fs::FileExt;
+// use std::os::unix::fs::FileExt;
 
 fn read_path(path_ :&str) -> io::Result<()>{
     let file = File::open(path_)?;
